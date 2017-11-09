@@ -18,7 +18,7 @@ public class Square extends Rectangle {
 	@Override
 	public String toString() {
 		// To be written by student
-		return "Square Side: " + side + " Area: " + this.calculateArea() + " Perimeter: " + this.calculatePerimeter();
+		return " Square Side: " + side + " Area: " + this.calculateArea() + " Perimeter: " + this.calculatePerimeter();
 	}
 
 }
