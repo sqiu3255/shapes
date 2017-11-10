@@ -32,4 +32,5 @@ public class Trapezoid implements Shape {
 		return " Trapezoid Base 1: " + base1 + " Trapezoid Base 2: " + base2 + " Trapezoid Side 1:" + side1 + " Trapezoid Side 2: " + side2 + " Area: " + this.calculateArea() + " Perimeter: " + this.calculatePerimeter();
 	}
 	
+			side = Math.sqrt((((Math.abs(base1-base2))/2)^2+height^2));
 }
