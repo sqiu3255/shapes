@@ -1,4 +1,4 @@
-package shapes;
+package shapes ;
 
 import java.util.Random;
 
@@ -16,7 +16,7 @@ public class ShapeUtilities {
 	 */
 	public static Shape randomShape() {
 		Random rand = new Random();
-		int x = rand.nextInt(3);
+		int x = rand.nextInt(5);
 
 		switch (x) {
 		case 0:
@@ -28,7 +28,7 @@ public class ShapeUtilities {
 		case 3: 
 			return new Triangle(rand.nextInt(50), rand.nextInt(50));
 		case 4:
-			return new Trapezoid(rand.nextInt(50), rand.nextInt(50),rand.nextInt(50));	
+			return new Trapezoid(rand.nextInt(50), rand.nextInt(50),rand.nextInt(50), rand.nextInt(50), rand.nextInt(50));	
 		default:
 			return new Circle(rand.nextInt(100));
 		}
@@ -43,7 +43,12 @@ public class ShapeUtilities {
 	 */
 	public static double sumArea(Shape[] shapes) {
 		// To be written by student
-		return Circle;
+		double totalArea = 0;
+		for (int i = 0; i < shapes.length; i++)
+		{
+			totalArea += shapes[i].calculateArea();
+		}
+		return totalArea;
 	}
 
 	/**
@@ -54,7 +59,12 @@ public class ShapeUtilities {
 	 */
 	public static double sumPerimeter(Shape[] shapes) {
 		// To be written by student
-		return 0.0;
+		double totalPerimeter = 0;
+		for (int i = 0; i < shapes.length; i++)
+		{
+			totalPerimeter += shapes[i].calculatePerimeter();
+		}
+		return totalPerimeter;
 	}
 
 }

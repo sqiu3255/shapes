@@ -6,7 +6,7 @@ public class Trapezoid implements Shape {
 	private int side1;
 	private int side2;
 	private int height;
-	
+	//			side = Math.sqrt((((Math.abs(base1-base2))/2)^2+height^2));//
 	public Trapezoid (int base1, int base2, int side1, int side2, int height) {
 		this.base1 = base1;
 		this.base2 = base2;
@@ -19,6 +19,10 @@ public class Trapezoid implements Shape {
 		// to be implemented by student
 		return ((base1+base2)/2)*height;
 	}
+	
+	
+	
+	
 
 	@Override
 	public double calculatePerimeter() {
@@ -32,5 +36,4 @@ public class Trapezoid implements Shape {
 		return " Trapezoid Base 1: " + base1 + " Trapezoid Base 2: " + base2 + " Trapezoid Side 1:" + side1 + " Trapezoid Side 2: " + side2 + " Area: " + this.calculateArea() + " Perimeter: " + this.calculatePerimeter();
 	}
 	
-			side = Math.sqrt((((Math.abs(base1-base2))/2)^2+height^2));
 }
