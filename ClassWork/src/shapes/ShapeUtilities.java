@@ -4,7 +4,7 @@ import java.util.Random;
 
 /**
  * @author Mr Levin Created 10/16/2017 Lab 2.1 shapes
- *
+ * Edited by Sophia Qiu & Jason Wu 11.14.2017
  */
 
 public class ShapeUtilities {
@@ -26,7 +26,7 @@ public class ShapeUtilities {
 		case 2:
 			return new Square(rand.nextInt(50));
 		case 3: 
-			return new Triangle(rand.nextInt(50), rand.nextInt(50));
+			return new Triangle(rand.nextInt(50), rand.nextInt(50), rand.nextInt(50), rand.nextInt(50));
 		case 4:
 			return new Trapezoid(rand.nextInt(50), rand.nextInt(50),rand.nextInt(50), rand.nextInt(50), rand.nextInt(50));	
 		default:

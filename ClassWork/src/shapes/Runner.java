@@ -1,7 +1,7 @@
 package shapes;
 /**
  * @author Mr Levin Created 10/16/2017
- *  Edited by Sophia Qiu & Jason Wu
+ *  Edited by Sophia Qiu & Jason Wu 11.14.2017
  * 
  *         Lab 2.1 shapes Create implement all necessary methods in this package
  *         to run the code below successfully. After your code below runs
@@ -34,6 +34,13 @@ public class Runner {
 		System.out.println("Total Perimeter: " + ShapeUtilities.sumPerimeter(shapeArr)); // 86.84
 		System.out.println("\nDid the three shapes above add up to the total printed here?\n");
 
+		
+		
+		/* Prints out random shapes with random variable values and their area and perimeter
+		 * and the total area and total perimeter of all the random shapes
+		 * 
+		 */
+		
 		System.out.println("\n\n Now testing the random array.\n");
 
 		shapeArr = new Shape[10];
