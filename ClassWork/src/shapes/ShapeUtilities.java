@@ -66,5 +66,32 @@ public class ShapeUtilities {
 		}
 		return totalPerimeter;
 	}
+	
+	
+	
+	//Added 11.27.2017 for "Java The Hard Way: instanceof
+	
+	public static void countShapes(Shape[] shapes) 
+	{
+		int rectangles = 0;
+		int circles = 0; 
+		for (Shape x : shapes)
+		{
+			if (x instanceof Circle) 
+			{
+				circles++;
+			}
+			if (x instanceof Rectangle)
+			{
+				rectangles++;
+			}
+		}
+		System.out.println(circles + " Circles Found and " + rectangles + " rectangles. ");
+	}
+	
+	
+	
+	
+	
 
 }
